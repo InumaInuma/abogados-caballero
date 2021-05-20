@@ -10,7 +10,8 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { PorfolioComponent } from './pages/porfolio/porfolio.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { SearchComponent } from './pages/search/search.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,11 +21,13 @@ import { HeaderComponent } from './shared/header/header.component';
     BlogComponent,
     PorfolioComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
